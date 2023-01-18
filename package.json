@@ -6,7 +6,9 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "gitpush": "git add . && git commit -m 'deploy' && git push origin main",
+    "deploy": "pnpm run build && pnpm run gitpush"
   },
   "license": "MIT",
   "devDependencies": {
